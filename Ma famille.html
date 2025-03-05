@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem - Famille Iroby</title>
+    <style>
+        /* Réinitialisation des styles par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles pour le corps de la page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #0a2e38, #1a535c, #4ecdc4); /* Fond dégradé */
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animation du fond dégradé */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Styles pour le conteneur principal */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Styles pour le titre */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #f1c40f; /* Couleur dorée */
+        }
+
+        /* Styles pour le paragraphe */
+        p {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #ecf0f1; /* Couleur claire */
+        }
+
+        /* Animation pour le texte */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, p {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Décorations ramadaniques (lanternes, étoiles, etc.) */
+        .decoration {
+            position: absolute;
+            z-index: 1;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        /* Animation pour les décorations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Positionnement des décorations */
+        .lantern {
+            width: 100px;
+            top: 10%;
+            left: 10%;
+            animation-duration: 6s;
+        }
+
+        .star {
+            width: 30px;
+            top: 20%;
+            right: 15%;
+            animation-duration: 4s;
+        }
+
+        .moon {
+            width: 80px;
+            bottom: 10%;
+            right: 10%;
+            animation-duration: 7s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Décorations ramadaniques -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3063/3063188.png" alt="Lantern" class="decoration lantern">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Star" class="decoration star">
+    <img src="https://cdn-icons-png.flaticon.com/512/3063/3063189.png" alt="Moon" class="decoration moon">
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <h1>Ramadan Kareem</h1>
+        <p>À la famille Iroby</p>
+    </div>
+</body>
+</html>
